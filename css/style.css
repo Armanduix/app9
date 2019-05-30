@@ -1,16 +1,16 @@
 *{
     margin: 0;
-	padding:0;
-	border:none;
-	outline:none;
+    padding: 0;
+    border: none;
+    outline: none;
 }
 
 body{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:arial;
 	font-size:13px;
 	line-height:1.5em;
-	color:#0F9;
-	background-color:#666;
+	color:#603;
+	background-color: #0C6 
 }
 
 .clearfix{
@@ -20,16 +20,16 @@ body{
 #container{
 	width:330px;
 	min-height:400px;
-	background:#303;
+	background:#C93;
 	overflow:auto;
 	margin:60px auto;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:#FFF solid 2px;
+	border:#30C solid 2px;
 }
 
-#audio-imagen{
+#audio-image{
 	position:relative;
 	overflow:hidden;
 	height:200px;
@@ -40,7 +40,7 @@ body{
 	text-align:center;
 }
 
-#aucio-info .artist{
+#audio-info .artist{
 	font-weight:bold;
 }
 
@@ -49,18 +49,25 @@ body{
 	z-index:1;
 }
 
-input#volume{
+input#volume {
 	width:95%;
 	margin-left:2%;
-	-webkit-appearance:none !important;
-	background:#C33;
-	height:1px;
+    -webkit-appearance: none !important;
+    background:#39C;
+    height:1px;
 	margin-bottom:20px;
 }
+/*input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../images/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}*/
+
 #buttons{
 	width:90%;
-	display:block;
-	margin:15px auto;
+	display: block;
+    margin: 15px auto;
 	margin-left:23px;
 	overflow:auto;
 }
@@ -68,56 +75,80 @@ input#volume{
 button#play{
 	width:70px;
 	height:70px;
-	background:url(../images/play.png) no repeat; float:left;
+	background:url(../images/play.png) no-repeat;float:left;
 }
 
 button#pause{
 	width:70px;
 	height:70px;
-	background:url(../images/pause.png) no repeat; float:left;
+	background:url(../images/pause.png) no-repeat;float:left;
 }
+
 button#stop{
 	width:70px;
 	height:70px;
-	background:url(../images/stop.png) no repeat; float:left;
+	background:url(../images/stop.png) no-repeat;float:left;
 }
-#playlist{
-	list-style-type:none;
+
+/*button#prev{
+	width:70px;
+	height:70px;
+	background:url(../images/prev.png) no-repeat;
+	float:left;
+	margin-top:15px;
+}
+
+button#next{
+	width:70px;
+	height:70px;
+	background:url(../images/next.png) no-repeat;
+	float:right;
+	margin-top:15px;
+}*/
+
+#playlist {
+    list-style-type: none;
 	padding:10px;
 }
-#playlist li{
-	cursor:pointer;
-	margin:5px;
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
 }
+
 #tracker{
 	position:relative;
 	width:100%;
 }
-#playlist li.active{
-	font-weight:bold;
+
+#playlist li.active {
+    font-weight: bold;
 	padding:3px;
-	background:#000;
+	background:#339;
 }
-#progressBar{
-	width:80%;
-	margin-left:2%;
-	margin-bottom:20px;
-	margin-top:9px;
-	height:10px;
-	background:url(../images/progress_bg.png) no repeat; float:left;
+
+#progressBar { 
+   width:80%;
+   margin-left:2%;
+   margin-bottom:20px;
+   margin-top:9px;
+   height:10px;
+   background: url(../images/progress_bg.png) no-repeat;
+   float:left;
 }
+
 #progress {
-	background:url(../images/progress.png) no repeat; float:left;
-	height:10px;
-	display:inline-block;
+   background: url(../images/progress.png) no-repeat;
+   height:10px;
+   display:inline-block;
 }
-#duration {
+
+#duration{
 	position:absolute;
 	top:0;
 	right:10px;
 	padding:4px 8px;
-	background:#000;
+	background: #0FC;
 	border-radius:5px;
 }
 
-	
