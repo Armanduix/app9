@@ -10,7 +10,7 @@ body{
 	font-size:13px;
 	line-height:1.5em;
 	color:#603;
-	background-color: #0C6 
+	background-color:#999;
 }
 
 .clearfix{
@@ -20,13 +20,13 @@ body{
 #container{
 	width:330px;
 	min-height:400px;
-	background:#C93;
+	background:#9FC;
 	overflow:auto;
 	margin:60px auto;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:#30C solid 2px;
+	border:#FFF solid 2px;
 }
 
 #audio-image{
